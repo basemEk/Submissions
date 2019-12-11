@@ -1,0 +1,67 @@
+img {
+  width: 100%;
+  height: 30em;
+}
+
+body {
+  background: #212b2d;
+  color: white;
+}
+.Home {
+  margin: 60px;
+}
+.Contact {
+  margin: 60px;
+}
+.About {
+  margin: 60px;
+}
+.Page_1 {
+  margin: 60px;
+}
+
+.bg {
+  background-color: #333d3f;
+}
+.bg a {
+  text-decoration: none;
+  color: white;
+}
+h2 {
+  text-decoration: underline;
+  color: rgb(2, 10, 75);
+}
+.parent1-lorem {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-gap: 2em;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.Sub {
+  color: red;
+}
+
+form textarea {
+  width: 415px;
+}
+.menu {
+  height: 10em;
+}
+.gallery {
+  width: 80%;
+}
+
+.parent2 {
+  display: grid;
+  /* grid-template-columns; */
+}
+
+.parent4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 2em;
+}
