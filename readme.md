@@ -55,9 +55,15 @@ The Codi Tech Submission repo, is an active changes every day.
 To keep working on the latest Submission folders you need to do the followings:
 
 ### Setup ( done once whenever you do a new clone )
+<<<<<<< HEAD
 
 `git remote add upstream git@github.com:coditech/Submissions.git`
 
 ### Updating ( Recurring step )
 
+=======
+`git remote add upstream git@github.com:coditech/Submissions.git`
+
+### Updating ( Recurring step )
+>>>>>>> ba9e4b1dce348b19d9ecc0f05ceb0fe743021a06
 `git pull upstream master`
