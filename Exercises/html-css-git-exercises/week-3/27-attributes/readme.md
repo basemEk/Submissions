@@ -7,7 +7,7 @@ In this exercise, you will add attributes to your form to make some fields requi
 1. Every address requires at least Address Line 1, Postcode and the City. Add the `required` attribute to these input fields so that the form can not be submitted without them.
 2. Your company only delivers to the UK, so you should enter this information for the user. Find the Country field in the Delivery Address. Add a `value` attribute of "United Kingdom" so that the form loads with the field already completed.
 3. You still need to prevent the user from changing the Country after it's loaded. Add a `readonly` attribute to this field so that the user can not change it.
-4. For this product, however, you only offer one delivery option. Since this is the only option, check this option for the user and disable the field so that they can't change it. Add a `checked` attribute to the field in order to check the field for the user. Add a `disabled` attribute to the field in order prevent the user from changing it.
+4. For this product, however, you only offer one delivery option. Since this is the only option, check this option for the user and disable the field so that they can't change it. Add a `checked` attribute to the field in order to check the field for the user. Add a `disabled` attribute to the field in order to prevent the user from changing it.
 
 When you are done, you should see an error message like below when you try to submit without completing one of the required fields.
 
