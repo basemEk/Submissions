@@ -6,12 +6,30 @@
     <title>19 - Search Form - HTML, CSS and Git Exercises</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/week3-forms.css" />
+
+    <style>
+      body {
+        background-color: red;
+        margin-top: 200px;
+      }
+      p {
+        color: blue;
+        text-align: center;
+      }
+      #btn {
+        margin-left: 16em;
+      }
+    </style>
   </head>
 
   <body>
     <div class="site-wrapper">
       <main>
-        <p>Delete this line and add your form.</p>
+        <form action="https://www.google.com" method="GET">
+          <p>New Search Engine</p>
+          <input type="text" name="q" placeholder="Google search" /><br />
+          <input type="submit" id="btn" value="Search" />
+        </form>
       </main>
     </div>
   </body>
