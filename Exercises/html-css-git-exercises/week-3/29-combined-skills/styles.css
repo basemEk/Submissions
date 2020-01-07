@@ -1,1 +1,49 @@
 /* Add your own CSS code below */
+footer span{
+    color:#c85308;
+}
+
+
+@media screen and (max-width: 992px){
+.hero__title{
+font-size: large;
+}
+}
+
+.main-nav__list{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: auto;
+}
+
+
+@media all and (min-width: 767px) {
+  .site-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .views {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+
+  .site-content {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#fs{
+    width:30%;
+}
+
+.main-article p{
+    max-width: 50em;
+    line-height: 1.7rem;
+} 
+

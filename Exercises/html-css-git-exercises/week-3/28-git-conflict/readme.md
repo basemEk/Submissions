@@ -87,7 +87,7 @@ This tells you that there is a merge conflict in the file `week-3/20-git-conflic
 
 Why did this happen? When git tried to merge the `purple_links` branch into `master` it found two commits: the commit where you changed the links to blue and the commit where you changed the links to purple.
 
-Since these commits change the same line of code, git doesn't know which one is correct. You have to tell it the correct code. To do this, edit the file to remove the added lines and the blue colour property, so that only the purple colour remains:
+Since these commits change the same line of code, git doesn't know which one is correct. You have to tell it the correct code. To do this, edit the file to move the added lines and the blue colour property, so that only the purple colour remains:
 
 ```css
 /* Add your own CSS code below */
