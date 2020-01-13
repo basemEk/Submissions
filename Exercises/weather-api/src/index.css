@@ -36,7 +36,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #srcImage {
@@ -49,8 +49,8 @@ button {
   font-size: 30px;
 }
 #srcImagew {
-  width: 400px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .imageResize {
@@ -64,5 +64,9 @@ button {
 }
 
 #HumidityPressure {
-  font-size: 18px;
+  font-size: 15px;
+}
+
+.temprature {
+  font-size: 20px;
 }
