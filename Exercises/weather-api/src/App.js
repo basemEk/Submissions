@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 import "./index.css";
+import storm from "./img/weather-icons/storm.svg";
+import imgFile1 from "./img/weather-icons/clear.svg";
+import imgFile2 from "./img/weather-icons/cloudy.svg";
+import imageFile3 from "./img/weather-icons/drizzle.svg";
+import imageFile4 from "./img/weather-icons/fog.svg";
+import imageFile5 from "./img/weather-icons/mostlycloudy.svg";
+import imageFile6 from "./img/weather-icons/partlycloudy.svg";
+import imageFile7 from "./img/weather-icons/rain.svg";
 
 class App extends Component {
   constructor(props) {
@@ -20,10 +28,9 @@ class App extends Component {
         </header>
         <div id="srcImage">
           <div className="app">
-            <header className="app__header"></header>
             <main className="app__main"></main>
           </div>
-          <img src="../src/img/weather-icons/clear.svg" id="srcImagew" />
+          <img src={storm} id="srcImagew" />
           <br />
           <p id="overcastCloud">overcast clouds</p>
           <br />
@@ -42,37 +49,37 @@ class App extends Component {
         <div class="weatherImages">
           <div class="imageResize">
             <p>03:00</p>
-            <img src="../src/img/weather-icons/cloudy.svg" />
+            <img src={imageFile7} />
             <p>8&#8451;</p>
           </div>
           <div class="imageResize">
             <p>06:00</p>
-            <img src="../src/img/weather-icons/drizzle.svg" />
+            <img src={imageFile6} />
             <p>9&#8451;</p>
           </div>
           <div class="imageResize">
             <p>09:00</p>
-            <img src="../src/img/weather-icons/fog.svg" />
+            <img src={imageFile5} />
             <p>14&#8451;</p>
           </div>
           <div class="imageResize">
             <p>12:00</p>
-            <img src="../src/img/weather-icons/mostlycloudy.svg" />
+            <img src={imageFile4} />
             <p>17&#8451;</p>
           </div>
           <div class="imageResize">
             <p>15:00</p>
-            <img src="../src/img/weather-icons/partlycloudy.svg" />
+            <img src={imageFile3} />
             <p>19&#8451;</p>
           </div>
           <div class="imageResize">
             <p>21:00</p>
-            <img src="../src/img/weather-icons/rain.svg" />
+            <img src={imgFile2} />
             <p>13 &#8451;</p>
           </div>
           <div class="imageResize">
             <p>22:00</p>
-            <img src="../src/img/weather-icons/snow.svg" />
+            <img src={imgFile1} />
             <p>14&#8451;</p>
           </div>
         </div>
