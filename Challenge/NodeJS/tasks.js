@@ -42,6 +42,8 @@ function onDataReceived(text) {
     help();
   } else if (text == "tasks\n") {
     console.log(taskFunction());
+  } else if (stringArray[0] == "add") {
+    if (stringArray[2] != "") addTask(stringArray[2]);
   } else {
     unknownCommand(text);
   }
@@ -100,4 +102,9 @@ function taskFunction() {
   for (let i = 0; i < tasks.length; i++) {
     console.log(tasks[i]);
   }
+}
+
+function addTask(x) {
+  tasks.push(x);
+  taskFunction();
 }
