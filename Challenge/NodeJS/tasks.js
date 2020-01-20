@@ -32,10 +32,12 @@ function startApp(name) {
  * @returns {void}
  */
 function onDataReceived(text) {
-  if (text === "quit\n" || "exit\n") {
+  if (text === "quit\n" || text === "exit\n") {
     quit();
-  } else if (text === "hello\n") {
+  } else if (text == "hello\n") {
     hello();
+  } else if (text == "help\n") {
+    help();
   } else {
     unknownCommand(text);
   }
@@ -66,10 +68,17 @@ function hello() {
  *
  * @returns {void}
  */
-function exitQuit() {
+function quit() {
   console.log("Quitting now, goodbye!");
   process.exit();
 }
 
 // The following line starts the application
 startApp("Bassem kreidly");
+
+//list all the commands by "help"
+function help() {
+  console.log("help");
+  console.log("hello");
+  console.log("quit");
+}
