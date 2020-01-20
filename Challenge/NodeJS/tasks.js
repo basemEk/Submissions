@@ -40,6 +40,8 @@ function onDataReceived(text) {
     hello(stringArray[2]);
   } else if (text == "help\n") {
     help();
+  } else if (text == "tasks\n") {
+    console.log(taskFunction());
   } else {
     unknownCommand(text);
   }
@@ -85,4 +87,17 @@ function help() {
   console.log("help");
   console.log("write 'hello' to say hello!");
   console.log(" write 'quit' of 'exit' to get out of the program");
+}
+
+let tasks = [
+  "read the question",
+  "read it again",
+  "solve them sequencially",
+  "let google be your first assistant"
+];
+
+function taskFunction() {
+  for (let i = 0; i < tasks.length; i++) {
+    console.log(tasks[i]);
+  }
 }
