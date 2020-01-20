@@ -44,6 +44,9 @@ function onDataReceived(text) {
     console.log(taskFunction());
   } else if (stringArray[0] == "add") {
     if (stringArray[2] != "") addTask(stringArray[2]);
+  } else if (stringArray[0] == "remove") {
+    if (stringArray[2] != " ") removeTask(stringArray[2]);
+    else console.log("error");
   } else {
     unknownCommand(text);
   }
@@ -106,5 +109,14 @@ function taskFunction() {
 
 function addTask(x) {
   tasks.push(x);
+  taskFunction();
+}
+
+function removeTask(y) {
+  let y = parseInt(y);
+  console.log(tasks.length);
+  if (y < tasks.length) {
+    tasks.splice(y, 1);
+  }
   taskFunction();
 }
