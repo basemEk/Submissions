@@ -92,6 +92,9 @@ function help() {
   console.log("help");
   console.log("write 'hello' to say hello!");
   console.log(" write 'quit' of 'exit' to get out of the program");
+  console.log("list");
+  console.log("add");
+  console.log("remove");
 }
 
 let tasks = [
@@ -113,10 +116,10 @@ function addTask(x) {
 }
 
 function removeTask(y) {
-  let y = parseInt(y);
+  let z = parseInt(y);
   console.log(tasks.length);
-  if (y < tasks.length) {
-    tasks.splice(y, 1);
+  if (z < tasks.length) {
+    tasks.splice(z, 1);
   }
   taskFunction();
 }
