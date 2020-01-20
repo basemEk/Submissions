@@ -83,6 +83,6 @@ startApp("Bassem kreidly");
 //list all the commands by "help" word
 function help() {
   console.log("help");
-  console.log("hello");
-  console.log("quit");
+  console.log("write 'hello' to say hello!");
+  console.log(" write 'quit' of 'exit' to get out of the program");
 }
