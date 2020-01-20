@@ -76,7 +76,7 @@ function quit() {
 // The following line starts the application
 startApp("Bassem kreidly");
 
-//list all the commands by "help"
+//list all the commands by "help" word
 function help() {
   console.log("help");
   console.log("hello");
