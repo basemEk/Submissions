@@ -53,7 +53,7 @@ where Points = (
 "SELECT Name from students where Name like '%s%';"
 
 "SELECT * FROM students
-   ORDER BY Points DESC;"
+ORDER BY Points DESC;"
 
 
 
