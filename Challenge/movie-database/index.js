@@ -1,13 +1,17 @@
 const express = require("express");
 const app = express();
-const port = 3000;
 
-app.get("/test", (req, res) => res.send("status:200, message:'ok'"));
+app.get("/", (req, res) => res.send("hello"));
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.get("/test", (req, res) => {
+  res.send({ status: 200, message: "ok" });
+});
+
+app.get("/time", (req, res) => {
+  res.json({
+    status: 200,
+    message: new Date().getHours() + ":" + new Date().getMinutes()
+  });
+});
 
 app.listen(2020);
-
-app.get("/time", function(req, res) {
-  res.send("status:200, message:");
-});
