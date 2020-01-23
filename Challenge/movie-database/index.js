@@ -21,7 +21,6 @@ app.get("/hello/:ID", (req, res) => {
 });
 
 app.get("/search", (req, res) => {
-  // console.log(req.params,req.query);
   if (req.query.s) {
     res.json({ status: 200, message: "ok ", data: req.query.s });
   } else {
@@ -31,4 +30,27 @@ app.get("/search", (req, res) => {
       message: "you have to provide a search"
     });
   }
+});
+
+const movies = [
+  { title: "Jaws", year: 1975, rating: 8 },
+  { title: "Avatar", year: 2009, rating: 7.8 },
+  { title: "Brazil", year: 1985, rating: 8 },
+  { title: "الارهاب والكباب", year: 1992, rating: 6.2 }
+];
+
+app.get("/movies/create", (req, res) => {
+  res.json({ status: 200, data: "creating movies" });
+});
+
+app.get("/movies/read", (req, res) => {
+  res.json({ status: 200, data: "read movies" });
+});
+
+app.get("/movies/update", (req, res) => {
+  res.json({ status: 200, data: "update movies" });
+});
+
+app.get("/movies/delete", (req, res) => {
+  res.json({ status: 200, data: "delete movies" });
 });
