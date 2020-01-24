@@ -128,3 +128,39 @@ app.get("/movies/read/id/:id", (req, res) => {
     });
   }
 });
+
+app.get("/movies/add", (req, res) => {
+  let new_title = req.query.title;
+  let new_year = req.query.year;
+  let new_rating = req.query.rating;
+
+  if (new_title && new_year && new_year.length == 4) {
+    //user enters title,year
+    if (new_rating) {
+      //user also enters rating
+      movies.push({
+        title: new_title,
+        year: parseInt(new_year),
+        rating: parseFloat(new_rating)
+      });
+    } else {
+      //doesn't enter rating
+      movies.push({
+        title: new_title,
+        year: new_year,
+        rating: 4
+      });
+    }
+    res.send({
+      status: 200,
+      error: false,
+      data: movies[movies.length - 1]
+    });
+  } else {
+    res.send({
+      status: 403,
+      error: true,
+      message: "you cannot create a movie without providing a title and a year"
+    });
+  }
+});
